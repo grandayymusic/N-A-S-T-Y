@@ -1,4 +1,4 @@
-class DeleteQueue {
+class nasty.delete {
 
     constructor() {
         this.todelete = [];
@@ -28,4 +28,4 @@ class DeleteQueue {
 
 }
 
-module.exports = DeleteQueue;
+module.exports = nasty.delete;
