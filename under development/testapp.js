@@ -24,6 +24,28 @@ client.on('message', message => {
     
     CommandExecutor(message) → {*}
     
+  // afk command is in the afk.js
+  // afk checker
+  if (msg.mentions.users.size > 0) { // checks if theres a mention
+    if (afk[msg.mentions.users.first().id]) { // check if its in the database
+      if (afk[msg.mentions.users.first().id].reason === true) { // check if theres no reason
+    const embed = new Discord.RichEmbed()
+    .setColor(0xFF390E)
+    .setTimestamp()
+    .addField(`**${msg.mentions.members.first().displayName}**`, `Is currently AFK`)
+    .setFooter(`Requested by ${msg.author.username}`)
+    return msg.channel.sendEmbed(embed);
+      } else {
+     const embed = new Discord.RichEmbed()
+    .setColor(0xFF390E)
+    .setTimestamp()
+    .addField(`**${msg.mentions.members.first().displayName}**`, `Is currently AFK`)
+    .addField(`With the reason: `, `**${afk[msg.mentions.users.first().id].reason}**`)
+    .setFooter(`Requested by ${msg.author.username}`)
+    return msg.channel.sendEmbed(embed);
+      }
+    }
+  }
     
     // Need rework
     if(msg.content.startsWith(prefix + 'play')){
