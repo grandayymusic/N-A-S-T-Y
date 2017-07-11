@@ -1,0 +1,37 @@
+Welcome to the read me of the project folder.
+
+This folder is to place and edit submittions for the next update/project.
+
+This is like a to-do list.
+
+1) Economy - Like Tatsumaki where you can do t!daily (200 credits), t!daily {mention} and check your balance.
+So, what I am planning is these features:
+//daily (every 24 hours) - Free 250 Credits
+//daily {mention} (also every 24 hours) - Gives from 150 - 350 credits to the mentioned user
+//bal - Check Bal
+//deposit {money in your pocket} - Deposit your money in the bank
+//bank - Creates back account and check your bal in the bank
+
+//steal {mention} - Tries to steal money from the mentioned user. The success rate is 50-50. If succeed, the money stealed will be his. If fail, different endings.
+Endings:
+Call police and you got caught and payed 150 credits to be free
+etc
+
+//work {every 12 hours} - Work and get paid instantly
+
+2) Picture cards for profile like Tatsumaki's t!profile
+- Name
+- Nickname
+- Credits
+- Bio
+- etc
+
+3) Custom Picture like NotSoBot's .wdt {text}/{picture}
+- ^
+
+4) Levels for using the bot
+- Every command for every minute will get random xp from 10 - 30
+- Level up 
+- Global Leaderboard (leaderboard for all guilds)
+
+To be added
